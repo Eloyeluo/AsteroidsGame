@@ -1,6 +1,10 @@
 Spaceship lightyear = new Spaceship();
+Star stars[] = new Star[100];
 public void setup() 
 {
+	for(int i = 0 ; i < stars.length ; i++){
+		stars[i] = new Star();
+	}
 	size(800,600);
 	lightyear.setDirectionX(0);
 	lightyear.setDirectionY(0);
@@ -8,15 +12,18 @@ public void setup()
 public void draw() 
 {
 	background(0);
+	for(int i = 0 ; i < stars.length ; i++){
+		stars[i].show();
+	}
     lightyear.show();
     lightyear.move();
 }
 public void keyPressed(){
 	if(key == 'd'){ //turn right
-		lightyear.turn(20);
+		lightyear.turn(30);
 	}
 	if(key == 'a'){ //turn left
-		lightyear.leftTurn(20);
+		lightyear.leftTurn(30);
 	}
 	if(key == 'w'){ //move up
 		lightyear.accelerate(0.3);
