@@ -9,7 +9,7 @@ public void setup()
 	for(int i = 0 ; i < enemies.length ; i++){
 		enemies[i] = new Asteroid();
 	}
-	size(1600,800);
+	size(800,600);
 	lightyear.setDirectionX(0);
 	lightyear.setDirectionY(0);
 	for(int i = 0 ; i < enemies.length ; i++){
@@ -45,7 +45,7 @@ public void keyPressed(){
 	if(key == 'g'){
 		lightyear.setDirectionX(0);
 		lightyear.setDirectionY(0);
-		lightyear.setX((int)(Math.random()*1600));
-		lightyear.setY((int)(Math.random()*800));
+		lightyear.setX((int)(Math.random()*800));
+		lightyear.setY((int)(Math.random()*600));
 	}
 }

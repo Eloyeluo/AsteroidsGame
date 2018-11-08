@@ -44,8 +44,8 @@ public class Asteroid extends Floater{
 		yCorners[17] = -7;
 		xCorners[18] = -13;//19
 		yCorners[18] = -5;
-		myCenterX = (int)(Math.random()*1600);
-		myCenterY = (int)(Math.random()*800);
+		myCenterX = (int)(Math.random()*800);
+		myCenterY = (int)(Math.random()*600);
 		myRotation = (int)(Math.random()*4) + 1;
 		myMovement = (int)(Math.random()*3) - 1;
 	}
