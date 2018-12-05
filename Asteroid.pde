@@ -46,8 +46,8 @@ public class Asteroid extends Floater{
 		yCorners[18] = -5;
 		myCenterX = (int)(Math.random()*800);
 		myCenterY = (int)(Math.random()*600);
-		myRotation = (int)(Math.random()*4) - 1;
-		myMovement = (int)(Math.random()*4) - 1;
+		myRotation = (int)(Math.random()*4) - 2;
+		myMovement = (int)(Math.random()*4) - 2;
 	}
   public void move(){
   	super.move();

@@ -15,5 +15,4 @@ class Star //note that this class does NOT extend Floater
   	color(myColorRed, myColorGreen, myColorBlue);
   	ellipse((float)myCenterX, (float)myCenterY, 1 , 1);
   }
-  
 }

@@ -1,6 +1,6 @@
 Spaceship lightyear = new Spaceship();
 Star stars[] = new Star[100];
-Asteroid enemies[] = new Asteroid[30];
+Asteroid enemies[] = new Asteroid[10];
 public void setup() 
 {
 	for(int i = 0 ; i < stars.length ; i++){
@@ -14,6 +14,7 @@ public void setup()
 	lightyear.setDirectionY(0);
 	for(int i = 0 ; i < enemies.length ; i++){
 		enemies[i].accelerate(enemies[i].getMovement());
+		enemies[i].turn(1);
 	}
 }
 public void draw() 
